@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>PageLayout</title>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+  <script type="text/javascript" src="meawwscript.js"></script>
+<!-- Adding img src -->
+<script type="text/javascript">
+  var image1=new Image();
+  image1.src="imgs/four.jpg" 
+  var image2=new Image();
+  image2.src="imgs/six.png"
+  var image3=new Image();
+  image3.src="imgs/five.jpg"
+</script>
+<!--end -->
+
+</head>
+<body>
+<div id="container">
+  <header>
+   <div id="header-inner">
+	      <a href="index.html" id="logo"><img src="imgs/mewlogo.jpg"/></a>
+	      <nav>
+	       <a href="#" id="menu-icon"></a>
+	       <ul>
+	       		<li><a href="index.html" class="current">Home</a></li>
+	       		<li><a href="#quizzlink">Quizzes</a></li>  
+	       		<li><a href="#article">Articles</a></li>
+            <li><a href="https://en.meaww.com/support">Contact</a></li> 
+	       		<li><a href="https://en.meaww.com/about-us">About Us</a></li>
+	       	   
+	       </ul> 
+	      </nav>
+  </header>
+  <div id="banner">
+   <img id="cover_pic" src="imgs/one.jpg" name="slide">
+
+ <!--fn to randomize cover pic -->
+<script type="text/javascript">
+  var step=1
+  function slideit()
+  {
+    document.images.slide.src=eval("image"+step+".src")
+    if(step<3)
+      step++
+    else 
+      step=1
+    setTimeout("slideit()",2500)
+  }
+  slideit() 
+
+  
+</script>
+  </div>
+  <div class="quizzes" id="quizzlink">
+  <a href="#header-inner"><img src="artimg/back.png" id="backbutton"/>
+   <h2 >Welcome to the World Of quizzes</h2>
+   <ul> 
+       <li><a href="http://en.meaww.com/activities/question/which-celebrity-is-your-twin/10424"><img src="imgs/qimgs1.png" id="quizimg"/></a></li>
+       <li><a href="http://en.meaww.com/activities/question/what-is-your-lifes-quote/10429"><img src="imgs/qimgs2.jpg" id="quizimg"/></a></li>
+       <li><a href="http://en.meaww.com/activities/question/which-friend-is-your-soulmate/10423"><img src="imgs/qimgs3.png " id="quizimg"/></a></li>
+       <li><a href="http://en.meaww.com/activities/question/which-friends-should-you-never-let-go-of/10422"><img src="imgs/qimgs4.jpg" id="quizimg"/></a></li>
+       <li><a href="http://en.meaww.com/activities/question/why-were-you-born/10425"><img src="imgs/qimgs5.jpg" id="quizimg"/></a></li>
+       <li><a href="http://en.meaww.com/activities/question/what-does-the-world-not-know-about-you/10427"><img src="imgs/qimgs6.png" id="quizimg"/></a></li>
+       <li><a href="http://en.meaww.com/activities/question/what-does-your-name-reveal-about-you/10418"><img src="imgs/qimgs7.jpg" id="quizimg"/></a></li>
+       <li><a href="http://en.meaww.com/activities/question/whats-the-motto-of-your-life/10419"><img src="imgs/qimgs8.png" id="quizimg"/></a></li>
+       <li><a href="http://en.meaww.com/activities/question/who-is-your-best-friend/10410"><img src="imgs/qimgs9.jpg" id="quizimg"/></a></li>
+   </ul> 
+  </div>
+  <div id="article">
+  <a href="#header-inner"><img src="artimg/back.png" id="backbutton"/>
+  <h2> Meaww Articles</h2>
+  <div class="art-section">
+    <ul class="art-grid1">
+        
+         <a href="http://en.meaww.com/read/family?ref_source=top_nav">
+         <li>
+         <div class="art-box">    
+         <img src="artimg/familynew.jpg" id="grid1pic"/>
+         <h1 id="art-innertext">Family</h1>  
+
+         </div>  
+       </li>
+       </a>
+
+       <a href="http://en.meaww.com/read/love?ref_source=top_nav">
+       <li>
+          <div class="art-box">
+          <img src="artimg/love.jpg" id="grid1pic"/> 
+          <h1 id="art-innertext">Love</h1>     
+          </div>
+          </li>
+          </a>  
+      
+        <a href="http://en.meaww.com/read/self?ref_source=top_nav">      
+       <li>
+          <div class="art-box">
+            <img src="artimg/self.jpg" id="grid1pic"/>
+             <h1 id="art-innertext">Self</h1>   
+          </div>  
+       </li>
+       </a> 
+
+    </ul> 
+
+     <ul class="art-grid2">
+       <a href="http://en.meaww.com/read/life?ref_source=top_nav">   
+       <li>
+          <div class="art-box">
+              <img src="artimg/life.jpg" id="grid2pic"/>
+               <h1 id="art-innertext2">Life</h1>       
+          </div>  
+       </li>
+        </a>
+        <a href="http://en.meaww.com/read/offbeat?ref_source=top_nav">
+       <li>
+          <div class="art-box">       
+               <img src="artimg/offbeat.jpg" id="grid2pic"/>
+               <h1 id="art-innertext2">Off-beat</h1>  
+                  
+          </div>  
+       </li>
+       </a>
+
+       <a href="http://en.meaww.com/read/entertainment?ref_source=top_nav">
+       <li>
+          <div class="art-box">
+              <img src="artimg/entertainment.jpg" id="grid2pic"/>
+               <h1 id="art-innertext2">Entertainment</h1>      
+          </div>  
+       </li>
+        </a>
+
+        <a href="http://en.meaww.com/read/spirituality?ref_source=top_nav">
+       <li>
+          <div class="art-box">
+              <img src="artimg/spirit.jpg" id="grid2pic"/>
+                <h1 id="art-innertext2">Spirituality</h1>    
+          </div>  
+       </li>
+       </a> 
+     </ul> 
+   </div>    
+  </div>
+  <!--end article section -->
+  <footer> 
+   <ul>
+   <li><a href="#header-inner">  <img src="artimg/home-icon.png"></br><h4 id="foot-words">Home</h4></a></li>
+   <li><a href="https://en.meaww.com/delete"> <img src="artimg/delete.png"></br><h4 id="foot-words">Delete app</h4></a></li>
+   <li><a href="https://en.meaww.com/support"> <img src="artimg/contactus.png"></br><h4 id="foot-words">Contact us </h4></a></li>
+   <li><a href="https://en.meaww.com/privacy"><img src="artimg/privacy.png"></br><h4 id="foot-words">Privacy </h4></a></li>
+   </ul>
+   <h5 id="foot-lastsent">Disclaimer:All content is provided for fun and entertainment purposes only.</h5>
+
+
+  </footer>
+</div>
+
